@@ -1,0 +1,59 @@
+plugins {
+    id 'java'
+    id 'java-gradle-plugin'
+    id 'maven-publish'
+    id "com.gradle.plugin-publish" version "0.18.0"
+}
+
+group 'com.thoughtworks'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.projectlombok:lombok:1.18.22'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+}
+
+gradlePlugin {
+    plugins {
+        jaCowCowPlugin {
+            id = 'com.thoughtworks.jaCowCowPlugin'
+            implementationClass = 'com.thoughtworks.JaCowCowPlugin'
+        }
+    }
+
+}
+
+
+
+//pluginBundle {
+//    website = 'http://www.gradle.org/'
+//    vcsUrl = 'https://github.com/gradle/gradle'
+//    description = 'Use this to get jacoco increasing rate!'
+//    tags = ['test coverage rate']
+//
+//    plugins {
+//        jaCowCowPlugin {
+//            id = 'com.thoughtworks.jaCowCowPlugin'
+//            displayName = 'JaCowCowPlugin'
+//        }
+//    }
+//}
+
+task copyHooks(type: Copy) {
+    println 'copyHooks task'
+    from(".gitHooks") {
+        include "**"
+    }
+    into ".git/hooks"
+    from("./run.sh") into "./"
+}
+build.dependsOn copyHooks
+
+test {
+    useJUnitPlatform()
+}

@@ -1,0 +1,26 @@
+#!/bin/bash
+
+echo "获取最新测试报告..."
+
+./gradlew clean build
+
+while true; do
+  if [ ! -f "build/reports/coverage/unit/jacocoTestReport.csv" ]; then
+    echo "waiting to get the test coverage reports..."
+  else
+    echo "调用脚本..."
+    chmod +x ./run.sh
+    ./run.sh
+
+    echo "add build.gradle文件..."
+    git add build.gradle
+
+    echo "commit build.gradle文件..."
+    git commit -m "[JaCowCow]: update minimum test coverage rate" --no-verify
+    (sleep 5; git push --no-verify; echo "JaCowCow Push Success!";) &
+
+    exit 0
+  fi
+done
+
+exit 0
