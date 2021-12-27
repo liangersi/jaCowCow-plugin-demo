@@ -4,21 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da703098-0a6a-40eb-9ee9-88a70f3213a3" name="Changes" comment="[liang xiyu] feat: modify log to sout.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/CopyFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/OsUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitHooks/pre-push" beforeDir="false" afterPath="$PROJECT_DIR$/.gitHooks/pre-push" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="da703098-0a6a-40eb-9ee9-88a70f3213a3" name="Changes" comment="[liang xiyu] feat: add propertites file.">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/gradle-plugins/jacowcow.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/JaCowCowPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/JaCowCowPlugin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +72,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -130,8 +121,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1640232937283</updated>
-      <workItem from="1640232939277" duration="23826000" />
+      <workItem from="1640232939277" duration="24816000" />
     </task>
+    <task id="LOCAL-00001" summary="[liang xiyu] feat: add copy file.">
+      <created>1640589974008</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1640589974008</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +149,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[liang xiyu] feat: modify log to sout." />
-    <option name="LAST_COMMIT_MESSAGE" value="[liang xiyu] feat: modify log to sout." />
+    <MESSAGE value="[liang xiyu] feat: add copy file." />
+    <option name="LAST_COMMIT_MESSAGE" value="[liang xiyu] feat: add copy file." />
   </component>
 </project>
