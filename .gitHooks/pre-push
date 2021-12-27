@@ -3,11 +3,13 @@
 echo "获取最新测试报告..."
 
 ./gradlew clean build
+RESULT=$?
 
 while true; do
   if [ ! -f "build/reports/coverage/unit/jacocoTestReport.csv" ]; then
     echo "waiting to get the test coverage reports..."
   else
+    if [ "$RESULT" -eq "0" ]; then
     echo "调用脚本..."
     chmod +x ./run.sh
     ./run.sh
@@ -19,8 +21,9 @@ while true; do
     git commit -m "[JaCowCow]: update minimum test coverage rate" --no-verify
     (sleep 5; git push --no-verify; echo "JaCowCow Push Success!";) &
 
-    exit 0
+    exit $RESULT
+    fi
   fi
 done
 
-exit 0
+exit $RESULT
