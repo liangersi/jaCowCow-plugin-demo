@@ -13,9 +13,8 @@ public class JaCowCowPlugin implements Plugin<Project> {
     @Override
     public void apply(Project project) {
         log.info("test for jaCowCow plugin");
-        OsUtils.runProcessWithDirectory("pwd", null);
-        File prePushShell = new File(".githooks/pre-push");
-        File runShell = new File("./run.sh");
+        File prePushShell = new File("./src/main/java/com/thoughtworks/prepare/pre-push");
+        File runShell = new File("./src/main/java/com/thoughtworks/prepare/run.sh");
         CopyFile.copyFile(prePushShell, ".git/hooks");
         CopyFile.copyFile(runShell, "./");
     }
